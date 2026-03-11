@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-description: "My open-source projects in Go and beyond."
+description: "My open-source projects"
 cascade:
   hideMeta: true
   ShowBreadCrumbs: true

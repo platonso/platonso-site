@@ -8,6 +8,10 @@
     display: none;
   }
   .page-header h1, .post-title { font-size: 32px; }
+  .post-content { font-size: 16px; }
+  .post-content img { max-width: 100%; height: auto; }
+
+  .social-icons { display: flex; align-items: flex-start; gap: 5px; }
 
   /* ── Burger menu ── */
   .burger {
@@ -107,6 +111,18 @@
     stroke-width: 2;
   }
 
+  /* ── Breadcrumbs ── */
+  .breadcrumbs {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--secondary);
+  }
+  .breadcrumbs a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
   /* Mobile: show burger, hide #menu */
   @media screen and (max-width: 768px) {
     #menu {
@@ -117,6 +133,10 @@
       display: flex;
       align-items: center;
       margin: auto var(--gap);
+    }
+
+    .entry-header h2 {
+      font-size: 18px;
     }
 
     /* Panel becomes a full-width top sheet */

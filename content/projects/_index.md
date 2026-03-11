@@ -1,6 +1,6 @@
 ---
 title: "Проекты"
-description: "Мои открытые проекты на Go и не только."
+description: "Мои open-source проекты"
 cascade:
   hideMeta: true
   ShowBreadCrumbs: true

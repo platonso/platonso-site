@@ -44,8 +44,10 @@ languages:
         Title: "О себе"
         Content: >
           Меня зовут **Платон**, я специализируюсь на высоконагруженных системах 
-          и backend разработке на Go. Основные направления моей деятельности:
-
+          и backend разработке на Go. 
+          
+          
+          Основные направления моей деятельности:
 
           - Проектирование отказоустойчивой архитектуры
 
@@ -63,7 +65,7 @@ languages:
     menu:
       main:
         - name: Home
-          url: /en/
+          url: /
           weight: 1
         - name: Projects
           url: projects/
@@ -75,14 +77,16 @@ languages:
       homeInfoParams:
         Title: "About me"
         Content: >
-          👋 Welcome! My name is **Platon**.
-
-
-            - Design fault-tolerant backend architecture
-
-            - Develop high-performance services in **Go**
-
-            - Key principles: clean code, scalability, and data security
+          My name is **Platon**, and I specialize in high-load systems and backend development with Go. 
+          
+          
+          My main areas of expertise:
+          
+          - Designing fault-tolerant architecture
+          
+          - Building performant and reliable services
+          
+          - Ensuring data security and maintaining code quality  
 
 outputs:
   home:
@@ -102,7 +106,7 @@ params:
   defaultTheme: auto
   displayFullLangName: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: false
+  ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: false
   ShowAllPagesInArchive: true
