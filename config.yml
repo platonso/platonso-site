@@ -1,0 +1,129 @@
+baseURL: "https://platonso.ru/"
+title: platonso
+copyright: "© platonso"
+theme: [hugo-PaperMod]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["projects"]
+
+defaultContentLanguage: ru
+defaultContentLanguageInSubdir: false
+
+minify:
+  disableXML: true
+
+pagination:
+  pagerSize: 10
+
+languages:
+  ru:
+    languageName: ":ru: Рус"
+    weight: 1
+    taxonomies:
+      tag: tags
+      category: categories
+    menu:
+      main:
+        - name: Главная
+          url: /
+          weight: 1
+        - name: Проекты
+          url: projects/
+          weight: 2
+        - name: Контакты
+          url: contact/
+          weight: 3
+    params:
+      homeInfoParams:
+        Title: "О себе"
+        Content: >
+          Меня зовут **Платон**, я специализируюсь на высоконагруженных системах 
+          и backend разработке на Go. Основные направления моей деятельности:
+
+
+          - Проектирование отказоустойчивой архитектуры
+
+          - Создание производительных и надежных сервисов
+
+          - Обеспечение безопасности данных и поддержание качества кода
+
+
+  en:
+    languageName: ":gb: Eng"
+    weight: 2
+    taxonomies:
+      tag: tags
+      category: categories
+    menu:
+      main:
+        - name: Home
+          url: /en/
+          weight: 1
+        - name: Projects
+          url: projects/
+          weight: 2
+        - name: Contact
+          url: contact/
+          weight: 3
+    params:
+      homeInfoParams:
+        Title: "About me"
+        Content: >
+          👋 Welcome! My name is **Platon**.
+
+
+            - Design fault-tolerant backend architecture
+
+            - Develop high-performance services in **Go**
+
+            - Key principles: clean code, scalability, and data security
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  description: "platonso — Go разработчик"
+  author: platonso
+
+  defaultTheme: auto
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: false
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+
+  socialIcons:
+    - name: email
+      title: Email
+      url: "mailto:mail@platonso.ru"
+    - name: telegram
+      title: Telegram
+      url: "https://t.me/platonso"
+    - name: github
+      title: GitHub
+      url: "https://github.com/platonso"
+
+  assets:
+    disableHLJS: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
