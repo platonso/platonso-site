@@ -95,6 +95,10 @@ params:
   description: "platonso — Go разработчик"
   author: platonso
 
+  services:
+    googleAnalytics:
+      id: ""
+
   defaultTheme: auto
   displayFullLangName: true
   ShowPostNavLinks: true
